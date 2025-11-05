@@ -59,7 +59,10 @@
     "release": "pnpm build && changeset publish",
     "prepare": "husky",
     "commitlint": "commitlint",
-    "commitlint:check": "commitlint --from HEAD~1 --to HEAD --verbose"
+    "commitlint:check": "commitlint --from HEAD~1 --to HEAD --verbose",
+    "docs:dev": "pnpm -F @zcf/docs dev",
+    "docs:build": "pnpm -F @zcf/docs build",
+    "docs:preview": "pnpm -F @zcf/docs preview"
   },
   "dependencies": {
     "@types/semver": "catalog:types",
